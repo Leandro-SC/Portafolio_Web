@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupo Saysil - Portafolio</title>
+  <!-- Vinculación del CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Fuentes externas -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navegación -->
+  <header id="header" class="fade-down">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Grupo Saysil</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Inicio / Hero -->
+  <section id="inicio" class="hero fade-down">
+    <div class="hero-content">
+      <h2>Bienvenido a mi Portafolio</h2>
+      <p>Modernidad, Profesionalismo y Creatividad en Desarrollo Web</p>
+      <a href="#proyectos" class="btn">Ver Proyectos</a>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí con efecto typewriter y fade down -->
+  <section id="sobre-mi" class="section fade-down">
+    <div class="container">
+      <h2>Sobre Mí</h2>
+      <p class="parafo-descripcion" id="aboutText" data-text="Soy Leandro Junior Silva Castillo, especialista en Business Intelligence y Data Science con amplia experiencia en el diseño e implementación de soluciones que transforman datos en información estratégica. Además de haber desarrollado proyectos frontend y backend, incluyendo un bot de Leads en Python, me destaco en la creación de sitios web modernos y altamente funcionales."></p>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="section fade-down">
+    <div class="container">
+      <h2>Proyectos Web</h2>
+      <div class="projects">
+        <div class="project-item" onclick="window.open('https://valcorp.com.pe/', '_blank')">
+          <div class="project-card-image" style="background-image: url('./assets/images/val.png');"></div>
+          <div class="project-card-content">
+            <h3>Valcorp</h3>
+          </div>
+        </div>
+        <div class="project-item" onclick="window.open('https://clinicasanmarcos.com/wordpress_E/', '_blank')">
+          <div class="project-card-image" style="background-image: url('./assets/images/san.png');"></div>
+          <div class="project-card-content">
+            <h3>Clínica San Marcos</h3>
+          </div>
+        </div>
+        <div class="project-item" onclick="window.open('https://mhousecleaning.com/', '_blank')">
+          <div class="project-card-image" style="background-image: url('./assets/images/mar.png');"></div>
+          <div class="project-card-content">
+            <h3>M House Cleaning</h3>
+          </div>
+        </div>
+        <div class="project-item" onclick="window.open('https://landing.clinicasanjudastadeo.com.pe/salud-segura/', '_blank')">
+          <div class="project-card-image" style="background-image: url('./assets/images/sj.png');"></div>
+          <div class="project-card-content">
+            <h3>Clínica San Judastadeo</h3>
+          </div>
+        </div>
+      </div>
+      <div class="extra-project"></div>
+    </div>
+  </section>
+
+  <!-- Sección Tecnologías -->
+  <section id="tecnologias" class="section fade-down">
+    <div class="container">
+      <h2>Tecnologías y Lenguajes</h2>
+      <ul class="tech-list">
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS / SCSS</li>
+        <li>Power BI Avanzado</li>
+        <li>MySQL</li>
+        <li>SQL Server</li>
+        <li>Flutter</li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="section fade-down">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p class="parrafo-contato">Puedes comunicarte para conocer más sobre mis proyectos y experiencia.</p>
+      <form id="contactForm" class="form-container">
+        <!-- Campo Nombre -->
+        <div class="form-group">
+          <input type="text" name="nombre" id="nombre" placeholder=" " required>
+          <label for="nombre">Tu nombre</label>
+        </div>
+        <!-- Campo Correo -->
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder=" " required>
+          <label for="email">Tu correo</label>
+        </div>
+        <!-- Campo Mensaje -->
+        <div class="form-group">
+          <textarea name="mensaje" id="mensaje" rows="4" placeholder=" " required></textarea>
+          <label for="mensaje">Tu mensaje</label>
+        </div>
+        <button type="submit" class="btn submit-btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Botón de WhatsApp flotante con diseño mejorado -->
+  <a href="#" class="whatsapp-btn" id="whatsappBtn" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Modal de Chat Bot básico -->
+  <div id="chatModal" class="modal">
+    <div class="modal-content">
+      <h3>Asistente Virtual</h3>
+      <p id="botMessage">Hola, soy el Asistente Virtual de Grupo Saysil. ¿Quieres continuar a WhatsApp para conversar?</p>
+      <div class="modal-buttons">
+        <button id="modalYes" class="btn">Sí, continuar</button>
+        <button id="modalNo" class="btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="fade-down">
+    <div class="container">
+      <p>&copy; 2025 Grupo Saysil. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Vinculación de JavaScript -->
+  <script src="js/main.js"></script>
+  <!-- Código inline para animación typewriter en Sobre Mí y gestión del chat bot -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Animación typewriter en sección "Sobre Mí"
+      const aboutEl = document.getElementById("aboutText");
+      const fullText = aboutEl.getAttribute("data-text");
+      const words = fullText.split(" ");
+      aboutEl.innerHTML = "";
+      let i = 0;
+      function typeWords() {
+        if (i < words.length) {
+          aboutEl.innerHTML += words[i] + " ";
+          i++;
+          setTimeout(typeWords, 100);
+        }
+      }
+      typeWords();
+
+      // Script para el menú hamburger en dispositivos móviles.
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // WhatsApp Bot: manejar click para abrir el modal
+      const whatsappBtn = document.getElementById("whatsappBtn");
+      const chatModal = document.getElementById("chatModal");
+      const modalYes = document.getElementById("modalYes");
+      const modalNo = document.getElementById("modalNo");
+
+      whatsappBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        chatModal.style.display = "flex";
+      });
+
+      // Botón para confirmar, redirecciona a WhatsApp
+      modalYes.addEventListener("click", function() {
+        chatModal.style.display = "none";
+        window.open("https://wa.me/904472452", "_blank");
+      });
+
+      // Botón para cancelar: cierra el modal
+      modalNo.addEventListener("click", function() {
+        chatModal.style.display = "none";
+      });
+
+      // Cerrar modal si se hace clic fuera del contenido
+      window.addEventListener("click", function(e) {
+        if (e.target === chatModal) {
+          chatModal.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
