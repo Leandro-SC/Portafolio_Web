@@ -59,34 +59,57 @@
   <!-- Sección Proyectos -->
   <section id="proyectos" class="section fade-down">
     <div class="container">
-      <h2>Proyectos Web</h2>
-      <div class="projects">
-        <div class="project-item" onclick="window.open('https://valcorp.com.pe/', '_blank')">
-          <div class="project-card-image" style="background-image: url('./assets/images/val.png');"></div>
+      <h2>Proyectos</h2>
+      <div class="tabs-proyectos">
+        <button class="tab-button-proy active" onclick="showProjectTab('webs', this)">Proyectos Web</button>
+        <button class="tab-button-proy" onclick="showProjectTab('dash', this)">Dashboards Power BI</button>
+        <button class="tab-button-proy" onclick="showProjectTab('auto', this)">Automatizaciones Python</button>
+      </div>
+  
+      <div id="webs" class="projects-container active">
+        <div class="project-card">
+          <img src="./assets/images/val.png" alt="Valcorp">
           <div class="project-card-content">
             <h3>Valcorp</h3>
+            <p>Rediseño completo de página corporativa en WordPress con Elementor, optimizada para SEO y velocidad.</p>
+            <a href="https://valcorp.com.pe/" target="_blank">Ver sitio</a>
           </div>
         </div>
-        <div class="project-item" onclick="window.open('https://clinicasanmarcos.com/wordpress_E/', '_blank')">
-          <div class="project-card-image" style="background-image: url('./assets/images/san.png');"></div>
+        <div class="project-card">
+          <img src="./assets/images/san.png" alt="Clínica San Marcos">
           <div class="project-card-content">
             <h3>Clínica San Marcos</h3>
+            <p>Landing page con sistema de reservas online, integración CRM y notificaciones automáticas.</p>
+            <a href="https://clinicasanmarcos.com/wordpress_E/" target="_blank">Ver sitio</a>
           </div>
         </div>
-        <div class="project-item" onclick="window.open('https://mhousecleaning.com/', '_blank')">
-          <div class="project-card-image" style="background-image: url('./assets/images/mar.png');"></div>
-          <div class="project-card-content">
-            <h3>M House Cleaning</h3>
-          </div>
-        </div>
-        <div class="project-item" onclick="window.open('https://landing.clinicasanjudastadeo.com.pe/salud-segura/', '_blank')">
-          <div class="project-card-image" style="background-image: url('./assets/images/sj.png');"></div>
-          <div class="project-card-content">
-            <h3>Clínica San Judastadeo</h3>
-          </div>
-        </div>
+        <!-- Más proyectos web... -->
       </div>
-      <div class="extra-project"></div>
+  
+      <div id="dash" class="projects-container">
+        <div class="project-card">
+          <img src="./assets/images/dashboard1.png" alt="Dashboard Ventas">
+          <div class="project-card-content">
+            <h3>Dashboard Ventas</h3>
+            <p>Panel interactivo en Power BI con KPIs de ventas, pronósticos y análisis de tendencias.</p>
+            <a href="#" target="_blank">Ver demo</a>
+          </div>
+        </div>
+        <!-- Más dashboards... -->
+      </div>
+  
+      <div id="auto" class="projects-container">
+        <div class="project-card">
+          <img src="./assets/images/python_bot.png" alt="Bot de Leads">
+          <div class="project-card-content">
+            <h3>Bot de Leads</h3>
+            <p>Script en Python para extracción y envío automático de leads vía email o WhatsApp.</p>
+            <a href="#" target="_blank">Ver código</a>
+          </div>
+        </div>
+        <!-- Más automatizaciones... -->
+      </div>
+  
     </div>
   </section>
 
@@ -106,6 +129,222 @@
         <li>SQL Server</li>
         <li>Flutter</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- NUEVA SECCIÓN DE SERVICIOS -->
+  <section id="servicios" class="section fade-down">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="tabs">
+        <button class="tab-button active" onclick="showTab.call(this,'b2c')">Sitios Web B2C</button>
+        <button class="tab-button" onclick="showTab.call(this,'negocios')">Web para Negocios</button>
+        <button class="tab-button" onclick="showTab.call(this,'automatizacion')">Automatización</button>
+        <button class="tab-button" onclick="showTab.call(this,'bi')">Dashboard Power BI</button>
+      </div>
+  
+      <div id="b2c" class="servicios-container active">
+        <div class="servicio-card">
+          <h3>Sitio Web Básico</h3>
+          <p class="precio">S/370</p>
+          <ul>
+            <li>Diseño personalizado</li>
+            <li>Formulario conectado a Google Drive</li>
+            <li>Certificado SSL gratis</li>
+            <li>CTA (WhatsApp o formulario en Drive)</li>
+            <li>Dominio + Hosting por 1 año</li>
+            <li>Diseño administrable con Cpanel</li>
+            <li>Correos corporativos</li>
+            <li>Google Search Console y Analytics</li>
+            <li>SEO básico</li>
+            <li>Atención 24/7</li>
+            <li>Hasta 5 páginas – Entrega en 1 semana</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Sitio%20Web%20Básico">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Landing Page</h3>
+          <p class="precio">S/400</p>
+          <ul>
+            <li>Diseño personalizado</li>
+            <li>CTA llamativos</li>
+            <li>Conexión a redes sociales</li>
+            <li>Certificado SSL gratis</li>
+            <li>Dominio + Hosting por 1 año</li>
+            <li>Correos corporativos</li>
+            <li>Diseño administrable con Cpanel</li>
+            <li>Google Analytics y Search Console</li>
+            <li>SEO básico – Hasta 5 páginas</li>
+            <li>Entrega en 1 semana</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Landing%20Page">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Sitio Web Intermedio</h3>
+          <p class="precio">S/550</p>
+          <ul>
+            <li>Todo lo anterior</li>
+            <li>Notificación de leads por correo</li>
+            <li>Respuesta automática a formularios</li>
+            <li>WhatsApp masivo</li>
+            <li>Hasta 15 páginas – Entrega en 2 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Sitio%20Web%20Intermedio">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Sitio Web Avanzado</h3>
+          <p class="precio">S/650</p>
+          <ul>
+            <li>Diseño personalizado</li>
+            <li>CTA WhatsApp o Formulario en Drive</li>
+            <li>Notificación de leads por correo</li>
+            <li>Flujo automático de respuesta</li>
+            <li>Conexión con base de datos</li>
+            <li>Certificado SSL, Dominio + Hosting 1 año</li>
+            <li>Administrable con Cpanel</li>
+            <li>Correos corporativos</li>
+            <li>Search Console y Analytics</li>
+            <li>SEO básico – Atención 24/7</li>
+            <li>WhatsApp masivo</li>
+            <li>Hasta 15 páginas – 2 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Sitio%20Web%20Avanzado">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Ecommerce</h3>
+          <p class="precio">S/800</p>
+          <ul>
+            <li>Diseño personalizado</li>
+            <li>Carrito de compras y pasarela de pago</li>
+            <li>Catálogo de productos</li>
+            <li>Reporte de ventas y alerta de stock</li>
+            <li>Certificado SSL, Dominio + Hosting 1 año</li>
+            <li>Administrable con Cpanel + APIs externas</li>
+            <li>Correos corporativos</li>
+            <li>Search Console y Analytics</li>
+            <li>SEO básico – Atención 24/7</li>
+            <li>Productos físicos o digitales</li>
+            <li>WhatsApp masivo</li>
+            <li>Entrega en 2 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Ecommerce">Solicitar</a>
+        </div>
+      </div>
+      <div id="negocios" class="servicios-container">
+        <div class="servicio-card">
+          <h3>Sitio Web Corporativo</h3>
+          <p class="precio">S/1200</p>
+          <ul>
+            <li>Hasta 15 páginas</li>
+            <li>Diseño a medida (marca y UX)</li>
+            <li>Formulario con notificación por email</li>
+            <li>Certificado SSL, Dominio + Hosting 1 año</li>
+            <li>Google Analytics y Search Console</li>
+            <li>SEO básico</li>
+            <li>CMS administrador</li>
+            <li>Entrega en 3 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Sitio%20Web%20Corporativo">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Corporativo Avanzado</h3>
+          <p class="precio">S/2500</p>
+          <ul>
+            <li>Todo lo anterior</li>
+            <li>Funcionalidades personalizadas</li>
+            <li>Integración con CRM/ERP</li>
+            <li>Chatbot / WhatsApp Business</li>
+            <li>Reporte mensual de leads</li>
+            <li>Soporte 3 meses</li>
+            <li>Entrega en 5 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Corporativo%20Avanzado">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Corporativo Enterprise</h3>
+          <p class="precio">S/7000</p>
+          <ul>
+            <li>Todo lo anterior + e-commerce ligero</li>
+            <li>Automatización email/SMS</li>
+            <li>Auditoría de seguridad OWASP</li>
+            <li>SLA 24/7 (soporte y monitoreo)</li>
+            <li>6 meses de mantenimiento</li>
+            <li>Entrega en 8 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Enterprise">Solicitar</a>
+        </div>
+      </div>
+      <div id="automatizacion" class="servicios-container">
+        <div class="servicio-card">
+          <h3>Starter</h3>
+          <p class="precio">S/400</p>
+          <ul>
+            <li>1 script Python (Excel, CSV, scraping o email)</li>
+            <li>2 revisiones</li>
+            <li>Manual de uso básico</li>
+            <li>Entrega en 5 días</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Starter">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Professional</h3>
+          <p class="precio">S/1200</p>
+          <ul>
+            <li>Todo lo anterior</li>
+            <li>Múltiples flujos (API, BBDD, emailing)</li>
+            <li>Logging y alertas por correo</li>
+            <li>Soporte por 1 mes</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Professional">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Enterprise</h3>
+          <p class="precio">S/3000</p>
+          <ul>
+            <li>Todo lo anterior</li>
+            <li>RPA (UiPath/Automation Anywhere)</li>
+            <li>Microservicio Python</li>
+            <li>Dashboard de monitoreo</li>
+            <li>3 meses de soporte y optimización</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Enterprise%20Automation">Solicitar</a>
+        </div>
+      </div>
+      <div id="bi" class="servicios-container">
+        <div class="servicio-card">
+          <h3>Dashboard Básico</h3>
+          <p class="precio">S/1500</p>
+          <ul>
+            <li>1 dashboard interactivo</li>
+            <li>Conexión a Excel/CSV/SQL</li>
+            <li>2 revisiones</li>
+            <li>Entrega en 1 semana</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Dashboard%20Básico">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Power BI Advance</h3>
+          <p class="precio">S/5000</p>
+          <ul>
+            <li>3 dashboards (KPIs, ventas, operacionales)</li>
+            <li>Modelado de datos y DAX</li>
+            <li>Despliegue en Power BI Service</li>
+            <li>Entrega en 3 semanas</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Power%20BI%20Advance">Solicitar</a>
+        </div>
+        <div class="servicio-card">
+          <h3>Consultoría Premium</h3>
+          <p class="precio">S/4000 por sesión</p>
+          <ul>
+            <li>Auditoría completa BI</li>
+            <li>Capacitación remota o presencial (hasta 8 h)</li>
+            <li>Soporte por 2 meses</li>
+            <li>Flexible según acuerdo con cliente</li>
+          </ul>
+          <a href="https://wa.me/904472452?text=Quiero%20cotizar%20Consultoría%20Premium">Solicitar</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -217,5 +456,23 @@
       });
     });
   </script>
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.servicios-container').forEach(cont => cont.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+<script>
+  function showProjectTab(tabId, btn) {
+    document.querySelectorAll('.tab-button-proy').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.projects-container').forEach(c => c.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+  
 </body>
 </html>
