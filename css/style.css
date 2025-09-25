@@ -129,7 +129,7 @@
     left: 0;
     width: 110%;
     height: 110%;
-    background-image: url('../assets/images/fondo_tec.jpg'); /* Imagen de fondo */
+    background-image: url('../assets/images/perfil_nano.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     filter: brightness(0.5);
